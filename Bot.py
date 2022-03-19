@@ -87,7 +87,7 @@ count_channel_id =
 guild_id =
 """
 #Heroku
-discordToken = os.environ['OTUzOTE0MDg2NjU4MzA2MDk4.YjLfuQ.vUCpVRvo8WNo2m23UkhgjVScixg']
+discordToken = os.environ['TOKEN']
 channel_id = os.environ['CHANNELID']
 count_channel_id = os.environ['COUNTID']
 guild_id = os.environ['GUILDID']
