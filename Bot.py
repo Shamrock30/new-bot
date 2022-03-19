@@ -36,7 +36,7 @@ def bannerMake(avUrl,userName, userCount):
     outlinemask = mask.resize(outlinesize, Image.ANTIALIAS)
     pfpImg.putalpha(pfpmask)
 
-    pfpoutline = Image.new('RGBA',outlinesize,(255,255,255,255))
+    pfpoutline = Image.new('RGBA',outlinesize,(223,255,4,255))
     pfpoutline.putalpha(outlinemask)
     #add pfp to background
     background = Image.open('banner.png')
@@ -123,7 +123,7 @@ async def on_member_join(member):
         print("Banner Make Error")
     channel = client.get_channel(int(channel_id))
     try:
-        message = await channel.send(content="Welcome <@%d>, make sure to read <#734008100050305114>"%member.id,file=discord.File('output.png'), delete_after = 360)
+        message = await channel.send(content="Welcome Summoner <@%d> to 𝕊𝕠𝕦𝕝 ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝟚! Please make sure to read <#953856487330050059> and enjoy your stay!"%member.id,file=discord.File('output.png'), delete_after = 360)
     except:
         print("Banner Send Error")
 
