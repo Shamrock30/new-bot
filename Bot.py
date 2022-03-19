@@ -123,7 +123,7 @@ async def on_member_join(member):
         print("Banner Make Error")
     channel = client.get_channel(int(channel_id))
     try:
-        message = await channel.send(content="Welcome Summoner <@%d> to 𝕊𝕠𝕦𝕝 ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝟚! Please make sure to read <#953856487330050059> and enjoy your stay!"%member.id,file=discord.File('output.png'), delete_after = 360)
+        message = await channel.send(content="Humanity will END soon. To avoid the END, your cooperation is needed. \n\nWelcome Summoner <@%d> to 𝕊𝕠𝕦𝕝 ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝟚! Please make sure to read <#953856487330050059> and enjoy your stay!"%member.id,file=discord.File('output.png'), delete_after = 360)
     except:
         print("Banner Send Error")
 
