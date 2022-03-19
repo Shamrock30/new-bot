@@ -53,20 +53,20 @@ def bannerMake(avUrl,userName, userCount):
     font = ImageFont.truetype('Fonts/%s'%headerFont, 40)
     x, y = (170,34)
     outline(draw,x,y,header,font)
-    draw.text((x, y), header, font=font, fill="white")
+    draw.text((x, y), header, font=font, fill=(223,255,4,255))
 
     #Discord Name
     font = ImageFont.truetype('Fonts/%s'%userFont, 22)
     x, y = (180,85)
     outline(draw,x,y,name,font)
-    draw.text((x, y), name, font=font, fill="white")
+    draw.text((x, y), name, font=font, fill=(223,255,4,255))
 
     #Member count
     message = "You are the %sth Member"%memberCount
     font = ImageFont.truetype('Fonts/%s'%memberFont, 10)
     x, y = (180,120)
     outline(draw,x,y,message,font)
-    draw.text((x, y), message, font=font, fill="white")
+    draw.text((x, y), message, font=font, fill=(223,255,4,255))
 
     #background.show()
     #banner output
